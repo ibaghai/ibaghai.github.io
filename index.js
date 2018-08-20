@@ -2,7 +2,7 @@ let projects = [{
    title: 'Immigration Visualization',
    desc: 'A visualization examining the change in population across the 2000s. Made with D3.js.',
    img: `url('img/immigration.png')`,
-   href: 'https://ishansaksena.github.io/immigration-viz/'
+   href: 'https://ibaghai.github.io/immigration-viz/'
 }];
 
 for (let i = 0; i < projects.length; i++) {
