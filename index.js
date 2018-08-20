@@ -1,6 +1,6 @@
 let projects = [{
    title: 'Immigration Visualization',
-   desc: 'A visualization examining the change in population across the 2000s. Made with D3.js.',
+   desc: 'A deep dive into who the American people are and where they come from, this is an exercise in tracing the history of an immigrant nation with data.',
    img: `url('img/immigration.png')`,
    href: 'https://ibaghai.github.io/immigration-viz/'
 }];
