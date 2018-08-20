@@ -1,5 +1,6 @@
 :root {
    --nav-height: 60px;
+   --container-width: 1000px;
 }
 
 html, body {
@@ -19,11 +20,11 @@ nav {
    border-bottom: 1px solid lightgray;
    padding: 0 15px;
    box-sizing: border-box;
+   background: white;
 }
 
 .navigation {
    width: 100%;
-   /* background: black; */
    height: 100%;
    display: flex;
    align-items: center;
@@ -35,12 +36,12 @@ nav {
    font-weight: 500;
 }
 
-.navigation .right {
+.right {
    display: flex;
    font-size: 0.9em;
 }
 
-.navigation .right a {
+.right a {
    margin-left: 30px;
    color: black;
    text-decoration: none;
@@ -58,7 +59,7 @@ nav {
 }
 
 .container {
-   max-width: 1000px;
+   max-width: var(--container-width);
    margin: auto auto;
 }
 
@@ -96,14 +97,80 @@ nav {
 }
 
 .section-title {
-   font-size: 30px;
+   font-size: 1.4em;
    font-weight: 500;
 }
+
+/* Projects */
+
+.project {
+   margin-top: 50px;
+   display: flex;
+}
+
+.project-img {
+   flex: 1;
+   height: 300px;
+   display: block;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.project-info {
+   flex: 1;
+   margin-left: 20px;
+   display: block;
+}
+
+.project-title {
+   font-weight: 500;
+   font-size: 1.4em;
+   color: black;
+   text-decoration: none;
+   transition: .3s;
+}
+
+.project-title:hover {
+   color: #BCBCBC;
+}
+
+.project-desc {
+   color: #B0B0B0;
+   font-size: 1.1 em;
+   margin-top: 10px;
+}
+
+/* Footer */
+
+.footer {
+   margin-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #B0B0B0;
+}
+
+.footer a {
+   color: #B0B0B0;
+   text-decoration: none;
+   padding: 30px 10px;
+   transition: .3s;
+   font-size: .9em;
+
+}
+
+.footer a:hover {
+   color: #333;
+}
+
+
 
 @media screen and (max-width: 479px) {
    body {
       font-size: 16px;
    }
+
+
 
    .banner {
       font-size: 1.8em;
@@ -113,8 +180,24 @@ nav {
       padding: 60px 30px;
    }
 
-   .section-title {
-      font-size: 1.8em;
+
+
+   .project {
+      display: block;
    }
 
+   .project-img {
+      height: 200px;
+   }
+
+   .project-info {
+      margin-top: 15px;
+      margin-left: 0px;
+   }
+}
+
+@media screen and (max-width:  1000px) {
+   .projects {
+      padding: 0 15px;
+   }
 }
