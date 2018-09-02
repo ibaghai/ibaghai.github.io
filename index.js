@@ -12,7 +12,7 @@ for (let i = 0; i < projects.length; i++) {
 
 
 function makeProject(project) {
-   return  `<div class="project">
+   return `<div class="project">
       <a href="${project.href}" class="project-img" style="background: ${project.img}; background-size: contain;
       background-repeat: no-repeat;"></a>
       <div class="project-info">
